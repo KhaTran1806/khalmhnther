@@ -8,13 +8,20 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
         <style>
+            /* BỔ SUNG: Đẩy toàn bộ nội dung trang xuống dưới để không bị nút Back che mất */
+            body {
+                padding-top: 100px; 
+                font-family: sans-serif;
+                margin: 0;
+            }
+
             .back-btn{
                 position: fixed;
                 top: 20px;
                 left: 20px;
 
                 background: #ffcfec;
-                color: #a0446c; /* CHỈNH SỬA: Đổi từ #fff sang màu đậm hơn để dễ đọc chữ trên nền hồng */
+                color: #a0446c; 
                 text-decoration: none;
 
                 padding: 14px 22px;
@@ -27,15 +34,26 @@
                 font-weight: 600;
                 box-shadow: 0 8px 20px rgba(0,0,0,.15);
                 
-                /* BỔ SUNG: Thêm hiệu ứng mượt mà khi hover */
                 transition: all 0.3s ease; 
-                z-index: 1000; /* Đảm bảo nút luôn nằm trên cùng */
+                z-index: 1000; 
             }
 
-            /* BỔ SUNG: Hiệu ứng khi di chuột vào nút cho sinh động */
             .back-btn:hover {
                 background: #fbb6e2;
                 transform: translateY(-2px);
+            }
+
+            /* CHỈNH SỬA: Căn lề các Heading cho gọn gàng hơn thay vì dính sát lề trái */
+            h1, h2, h3, h4, h5, h6 {
+                padding-left: 20px;
+            }
+
+            /* CHỈNH SỬA: Giúp bài thơ hiển thị font chữ dễ nhìn và căn giữa đẹp mắt */
+            pre {
+                font-family: inherit;
+                font-size: 18px;
+                text-align: center;
+                line-height: 1.6;
             }
         </style>
     </head>
@@ -58,15 +76,16 @@
         
         <p style="text-align: center; color: blue; font-size:30px;"> Trên đây là dòng kẻ ngang </p>
         <h3 style="text-align: center; color: red ; font-size:50px;">Thơ ngắn 2 câu</h3>
+
 <pre>
 Biển cứ cậy là mình dày rộng thế.
 Vắng cánh buồm chỉ một chút đã cô đơn.
 
-    Chút nắng vàng sao làm nên mùa hạ.
-    Chút tình xa lạ sao giữ được người ta.
+Chút nắng vàng sao làm nên mùa hạ.
+Chút tình xa lạ sao giữ được người ta.
 
 Có khi nào trên đường đời tấp nập.
 Ta vô tình đi lướt qua nhau.
-        </pre>
+</pre>
     </body>
 </html>
